@@ -1,0 +1,66 @@
+/*
+ Theme Name:   Gridbox Child
+ Template:     gridbox
+*/
+
+html, body {
+    height: 100%;
+}
+
+.site-branding .custom-logo {
+    height: 23px;
+	width: 23px;
+	vertical-align: unset;
+	margin: 0 5px 0 0;
+}
+
+.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+	height: 14rem;
+	object-fit: cover;
+}
+
+pre {
+	font-family: var(--text-font);
+}
+
+.wp-block-latest-posts__list.wp-block-latest-posts {
+	list-style: unset;
+	margin-left: 25px;
+}
+
+/* 
+ * Custom Footer Style
+ */
+
+	/* Custom hr */
+
+	.custom-footer__hr {
+		background-color: var(--footer-text-color);
+		opacity: 0.75;
+	}	
+
+	/* General */
+
+	#custom-footer__menu li a, .footer-text-color {
+		color: var(--footer-text-color);
+		opacity: 0.75;
+	}
+
+	#custom-footer__content a:hover {
+		text-decoration: underline;
+	}
+
+	#custom-footer__content ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	/* @media */
+
+	@media screen and (min-width: 768px) {
+	  .two-columns {
+		display: grid;
+		grid-template-columns: calc(70% - 25px) calc(30% - 25px);
+		gap: 50px;
+	  }
+	}
